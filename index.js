@@ -15,15 +15,15 @@ async function getPizza() {
 
         let { mensaje, productos } = result;
         productos.map(({ linkImagen, precio, nombre, id }) => {
-            renderUI(linkImagen, precio,nombre, id);
-            quickView(linkImagen, id,nombre,precio);
+            renderUI(linkImagen, precio, nombre, id);
+            quickView(linkImagen, id, nombre, precio);
         });
     } catch (error) {
         console.error(error);
     }
 }
 
-function renderUI(image, price, title,id) {
+function renderUI(image, price, title, id) {
     let foodWrapper = document.getElementById('food_wrapper');
 
 
@@ -43,25 +43,21 @@ function renderUI(image, price, title,id) {
                         <span style="text-decoration:line-through;margin:5px;color:grey;">$${parseInt(price) + 15.00}.00</span>$${price}
                     </div>
                     <div class="Btns">
-                        <button>Add to Cart</button>
+                        <a href="./cart.html"><button>Add to Cart</button></a>
                         <button data-bs-toggle="modal" data-bs-target="#exampleModal" id="view${id}">Quick View</button>
                     </div>
                 </div>`;
     foodWrapper.innerHTML += card;
 }
 
-function quickView(image, id,title,price) {
-
-
-
-
+function quickView(image, id, title, price) {
     let modalImage = document.getElementsByClassName('modal-image');
     let modalBodyHeading = document.getElementById('body-heading');
     let modalBodyPrice = document.getElementById('body_price');
 
-    for(let i = 0;i < modalImage.length;i++){
-        modalImage[i].setAttribute('id',`product${id}`)
-        console.log(modalImage[i],id);
+    for (let i = 0; i < modalImage.length; i++) {
+        modalImage[i].setAttribute('id', `product${id}`)
+        console.log(modalImage[i], id);
         modalImage[i].src = image;
 
     }
@@ -72,6 +68,8 @@ function quickView(image, id,title,price) {
 
 
 }
+
+
 
 getPizza();
 

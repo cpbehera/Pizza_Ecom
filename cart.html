@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+
+    <!-- Bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <main>
+        <div class="cart_form">
+            <form action="./cart-success.html">
+                <div class="form_header">
+                    <h1>Welcome to italian pizza!</h1>
+                    <h3>We deliver pizza in 40 minutes max,If not-Pizza's on us!</h3>
+                </div>
+                <div class="form_inputs">
+                    <div class="email">
+                        <label for="email">Email</label><br />
+                        <input type="email" name="" id="">
+                    </div>
+
+                    <div class="phone">
+                        <label for="phone">Phone</label><br />
+                        <input type="text" name="" id="" placeholder="Area">
+                        <input type="text" name="" id="" placeholder="Local">
+                        <input type="text" name="" id="" placeholder="Local">
+                    </div>
+                    <div class="slices">
+                        <label for="slices">Number of slices</label><br />
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="pizza_size">
+                        <label for="slices">Pizza Size</label><br />
+                        <input type="radio" name="" id=""><span>8-inch</span>
+                        <input type="radio" name="" id=""><span>10-inch</span>
+                        <input type="radio" name="" id=""><span>12-inch</span>
+                        <input type="radio" name="" id=""><span>14-inch</span>
+                    </div>
+
+                    <div class="pizza_toppings">
+                        <label for="slices">Toppings</label><br />
+                        <input type="checkbox" name="" id=""><span>Pepperoni</span>
+                        <input type="checkbox" name="" id=""><span>Onions</span>
+                        <input type="checkbox" name="" id=""><span>Mushrooms</span>
+                        <input type="checkbox" name="" id=""><span>Sausage</span>
+                    </div>
+
+                    <div class="term">
+                        <input type="checkbox" name="" id="">
+                        <span>I agree to the <a href="#">TERMS AND CONDITIONS</a><span
+                                style="color: #ff0000">*</span></span>
+                    </div>
+                </div>
+                <div class="order_now">
+                    <button type="submit" id="submitBtn">Order Now</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- custom js file -->
+    <script src="./cart.js"></script>
+    
+</body>
+
+</html>

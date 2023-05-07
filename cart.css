@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+input[type="text"],input[type="email"]{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+label{
+    font-size: 17px;
+    color: #000;
+    font-weight: 300;
+}
+span{
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+}
+
+/* main */
+main{
+    height: 100vh;
+    width: 100vw;
+    background: url(./asset/image/pizza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.cart_form{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.form_header{
+    padding: .5rem 2rem;
+    background-color: #EDC5A2;
+}
+.form_header h1{
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form_header h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.form_inputs{
+    padding: .5rem 2rem;
+    background: #d2ccccb0;
+}
+.form_inputs div{
+    margin-top: 15px;
+}
+.phone input{
+    width: 100px;
+}
+.pizza_size input,.pizza_toppings input,.term input{
+    width: 30px;
+    height: 20px;
+}
+.term{
+    padding: .5rem 0;
+}
+.order_now{
+    width: 100%;
+    margin-top: 20px;
+}
+.order_now button{
+    width: 100%;
+    background-color: #D25025;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
