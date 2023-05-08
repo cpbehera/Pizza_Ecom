@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* utility classes */
@@ -28,19 +30,22 @@ button{
 
 /* header */
 header {
-    height: 100vh;
-    width: 13vw;
+    height: 10vh;
+    width: 99vw;
+    padding: 1rem;
 }
 
 nav {
     height: 100%;
-    flex-direction: column;
     justify-content: space-between;
+}
+.menuItem{
+    padding-top: 8px;
 }
 
 nav ul li {
     text-align: center;
-    margin: 0.5rem 0;
+    margin: 0 0.5rem;
 }
 
 nav ul li a {
@@ -57,47 +62,63 @@ nav ul li a:hover,
 
 .socialLinks {
     width: 100%;
-    text-align: center;
-    height: 13vh;
+    float: right;
+    text-align: end;
+}
+.socialLinks span{
+    margin: 0 .5rem;
+}
+.socialLinks span a{
+    color: #4b4b4b;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.socialLinks img{
+    width: 20px;
 }
 
-.socialIcon i {
+.socialLinks i {
     font-size: 14px;
-    margin: .3rem;
+    color: #4b4b4b;
 }
 
-.orderBtn {
-    margin-top: 0.2rem;
+.socialLinks button {
     background: #C84D28;
-    padding: .2rem 0;
-}
-
-.orderBtn span {
+    padding: .2rem .8rem;
+    width: 140px;
     text-transform: uppercase;
     color: #fff;
 }
 
 /* main */
 
-main {
-    width: 87vw;
-    height: 100vh;
-    overflow-y: scroll;
+.heroImg{
+    height: 350px;
+    width: 99vw;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient( rgba(255, 0, 0, 0.45), 
+    rgba(255, 0, 0, 0.45)),url(../image/banner.png);
 }
-
-.heroImg {
-    width: 100%;
+.heroImg h3,.heroImg h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
 }
-
-.heroImg img {
-    width: 100%;
+.heroImg h3{
+    font-size: 13px;
 }
-
+.heroImg h2{
+    font-size: 25px;
+}
 #food_wrapper {
     flex-wrap: wrap;
     padding: 2rem 5rem;
     justify-content: space-between;
     gap: 40px;
+    width: 87vw;
+    margin: 0 0 0 150px;
 }
 
 .foodCard {
@@ -144,7 +165,7 @@ main {
 
 /* modal */
 .modal-content{
-    width: 650px !important;
+    width: 700px !important;
     height: 400px;
     flex-direction: row;
     margin: 100px 0 0 -100px;
